@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>webcam experiments</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="photobooth">
+      <div class="controls">
+        <div class="top">
+
+       
+       
+        <input type="range" name="one" id="one" min="1" max="150" value="150" class="slider">
+        <input type="range" name="two" id="two" min="1" max="200" value="20" class="slider">
+        <input type="range" name="three" id="three" min="1" max="200" value="1" class="slider">
+ </div>
+  <div class="bottom">
+    <input type="radio" id="red"
+     name="controls" value="red" checked>
+    <label for="red">colour</label>
+
+    <input type="radio" id="shift"
+     name="controls" value="shift">
+    <label for="shift">shift</label>
+
+    <input type="radio" id="noise"
+     name="controls" value="noise">
+    <label for="noise">noise</label>
+
+    <input type="radio" id="plain"
+     name="controls" value="plain">
+    <label for="plain">plain</label>
+     <button onClick="takePhoto()">Take Photo</button>
+  </div>
+  
+
+      <canvas class="photo"></canvas>
+      <video class="player"></video>
+      <div class="strip"></div>
+    </div>
+
+    <audio class="snap" src="./snap.mp3" hidden></audio>
+
+    <script src="scripts.js"></script>
+    <script>
+
+    </script>
+  </body>
+</html>
